@@ -14,3 +14,5 @@ Resultado:
 > Task :hello
     Hello gradle
 ```
+
+Un build file define las tareas (ya sean predefinidas, o directamente o indirectamente a tráves de plugins)
