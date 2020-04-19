@@ -9,3 +9,17 @@ Este proceso es similar pero se crean los archivos de gradle usando un wrapper
 
 
 
+## Detalles
+si se prefiere otra versión de gradle es mejor especificarlo de esta forma:
+```gradle wrapper --gradle-version 6.2 --distribution-type all```
+
+## Razones para usar wrapper
+- El IDE lo necesita cuando esta cargando un proyecto
+- cuando sea necesario para crear un build
+
+## Motivos para usar un Build Server
+- Integración Continua: cuando hay un cambio en el código, nosotros necesitamos revisar que se despliegue continuamente.
+- Si no es CI al menos las versiones más recientes de prueba o nightly builds
+- Si no es en nightly entonces un lugar 'limpio' para evitar el "esto trabaja en mi máquina"
+
+Se recomiendaa TeamCity para administrar los proyectos y builds.
